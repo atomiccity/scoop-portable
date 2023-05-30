@@ -86,7 +86,6 @@
     ],
     "post_install": [
         "(Get-Content \"$persist_dir\\etc\\nsswitch.conf\") -replace 'db_home: cygwin desc', 'db_home: /c/Users/%U' | Set-Content \"$persist_dir\\etc\\nsswitch.conf\"",
-        "(Get-Content \"$persist_dir\\etc\\post-install\\05-home-dir.post\") -replace '\"\\${HOME}', '\"${HOME}/scoop/persist/msys2/home/user' | Set-Content \"$persist_dir\\etc\\post-install\\05-home-dir.post\"",
         "Add-Content -Path \"$persist_dir\\etc\\skel\\.bashrc\" -Value @'",
         "",
         "# Add Scoop shims directory to MSYS PATH",
