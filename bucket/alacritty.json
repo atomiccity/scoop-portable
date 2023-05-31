@@ -31,7 +31,7 @@
         [
             "alacritty.exe",
             "Alacritty MSys",
-            "--config-file \"$persist_dir\\alacritty.yml\" --working-directory \"%USERPROFILE%\" --command \"$scoopdir\\shims\\bash --login\""
+            "--config-file \"$persist_dir\\alacritty.yml\" --working-directory \"%USERPROFILE%\" --command bash --login\""
         ]
     ],
     "persist": [
