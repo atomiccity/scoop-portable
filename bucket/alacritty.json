@@ -26,12 +26,12 @@
         [
             "alacritty.exe",
             "Alacritty PoSh",
-            "--config-file \"$persist_dir\\alacritty.yml\" --working-directory \"%USERPROFILE%\" --command pwsh"
+            "--config-file \"$persist_dir\\alacritty.yml\" --command pwsh -NoExit -NoProfile -WorkingDirectory ~ -File \"%USERPROFILE%/scoop/persist/pwsh/profile.ps1\""
         ],
         [
             "alacritty.exe",
             "Alacritty MSys",
-            "--config-file \"$persist_dir\\alacritty.yml\" --working-directory \"%USERPROFILE%\" --command bash --login\""
+            "--config-file \"$persist_dir\\alacritty.yml\" --command \"%USERPROFILE%/scoop/shims/bash --login\""
         ]
     ],
     "persist": [
